@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='ja'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no'>
+    <!-- <link rel='icon' type='image/vnd.microsoft.icon' href='./favicon.ico' /> -->
+    <!-- <link rel='stylesheet' href='./css/index.min.css' />
+    <script src='./js/index.js'></script> -->
+    <title>404 - Something Was Here</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Imprima');
+        @import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20JP');
+        *, *::after, *::before {
+            box-sizing: border-box;
+        }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Imprima, 'Noto Sans JP';
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .fullbanner {
+            position: relative;
+            display: flex;
+            /* width: 100vw; */
+            height: 100vh;
+            /* background-image: url(); */
+            background-color: #364860;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+        }
+        .fullbanner_title {
+            position: relative;
+            margin: 0;
+            padding: 5px;
+            color: transparent;
+            text-align: center;
+            font-size: 120px;
+            /* text-shadow: 0 0 1px #aaccff; */
+            -webkit-text-stroke: 3px #aaccff;
+            background-image: linear-gradient(90deg, #8383ff, #ff8383);
+            background-position: bottom 12% center;
+            background-size: 0 3px;
+            background-repeat: no-repeat;
+            filter: blur(500px);
+            transition: all 1s;
+            animation-name: title-active;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+        @keyframes title-active {
+            20% { filter: blur(0); background-size: 0 3px; }
+            40% { filter: blur(0); background-size: calc(100% - 10px) 3px; }
+            60% {
+                filter: blur(0);
+                background-position: bottom center;
+                background-size: calc(100% - 10px) 3px;
+            }
+            100% {
+                filter: blur(0);
+                -webkit-text-stroke: .1px transparent;
+                background-position: bottom center;
+                background-size: 100% 100%;
+                -webkit-background-clip: text;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class='fullbanner'>
+        <h1 class='fullbanner_title'>Something Was Here</h1>
+    </div>
+</body>
+</html>
+
